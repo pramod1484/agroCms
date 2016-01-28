@@ -1,0 +1,104 @@
+   <div id="usersetting">
+	<nav class="top_buttons1">
+	<ul>
+	
+
+		<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">
+
+      	<?php if($count!=0) { ?>				
+      	<a href="<?= site_url('backend/user/index')?>" title="Users" class="the_button1">
+      		<? } ?>
+      			<div id="iconimg">
+							<img src="<?php echo base_url(); ?>images/new/user.png" height="30" width="30"/>
+							</div>
+								</a>	
+							</div>
+		</div>		
+		</div>
+		<div id="count_pos">
+   <?php echo $count;?> 
+		</div>
+		</li>	
+		
+			<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">		
+					<a href="<?= site_url('backend/content')?>" title="All pages" class="the_button1">
+				<div id="iconimg">
+							<img src="<?php echo base_url(); ?>images/new/all.jpg" height="30" width="30"/>
+							</div>
+				</a>
+		</div>		
+		</div>
+		</div>
+		<div id="count_pos">
+   <?php echo $count;?>
+		</div>
+		</li>	
+				<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">	
+	 <a href="<?= site_url('backend/blocks')?>" title="All blogs" class="the_button1">
+			<div id="iconimg">
+		<img src="<?php echo base_url(); ?>images/new/all.jpg" height="30" width="30"/>	
+		</div></a>
+		</div>
+		</div>
+		</div>
+		<div id="count_pos">
+	<?php 
+	echo $count;
+	 //echo $count['allcount']; ?>
+		</div>
+		</li>		 
+		
+		
+				<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">
+
+      	<?php if($count!=0) { ?>				
+      	<a href="<?= site_url('backend/media/index')?>" title="Media" class="the_button1">
+      		<? } ?>
+      			<div id="iconimg">
+							<img src="<?php echo base_url(); ?>images/new/folder_image.png" height="30" width="30"/>
+							</div>
+								</a>	
+							</div>
+		</div>		
+		</div>
+		<div id="count_pos">
+	<?php echo $count['allcount']; ?>
+		</div>
+		</li>	
+		
+		
+			
+			</ul>
+</nav>
+	</div>
+			
+		
+			<div class="g_12 separator under_stat"><span></span></div>
+
+<?php switch($any){
+
+		case 'log':$this->load->view('backend/log_view');		
+						 break;
+		case 'msg':if($st=='new')
+					{
+						$this->load->view('user/message_create');
+					}else{
+						$this->load->view('user/message_view');
+						
+					}
+						    break;
+	 }
+?>
+	

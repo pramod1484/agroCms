@@ -1,0 +1,119 @@
+<!--
+We will create a family tree using just CSS(3)
+The markup will be simple nested lists
+-->
+<div class="g_12">
+<div class="tree">
+ <ul>
+	 <?php foreach($treeuser1 as $r) 
+	{
+		if($r->parent_id==0)
+		{	
+		      ?>
+		<li>
+			<a class="active" ></a>
+			<ul>
+			        <?php foreach($treeuser2 as $r1) 
+			   { 
+					if($r1->parent_id==$r->id)
+				 { 
+			                 ?> 
+			       	<li>
+					 	<a  class="active"></a>
+					<ul>
+					<?php foreach($treeuser3 as $r2) { 
+								if($r2->parent_id==$r1->id) { 
+									?>
+						<li>
+					
+					<a  class="active"></a>
+				</li>
+					<?php }
+								  }?>
+								</ul>
+								</li>
+				
+								<?php }
+							      }?> 
+					  
+							</ul> 				
+				
+							<?php } 
+							  }?>
+		</li>
+</ul>
+<!--	<ul>
+	
+			
+		<li >	
+			<a class = "active" href="<?php echo base_url(). 'dashboard/tree/hahah'?>" rel="htmltooltip"></a>
+			<ul>
+			
+			
+				<li>
+					<a class = "active" href="#" rel="htmltooltip" ></a>
+					<!--<ul>
+						<li><a class = "active" href="#" rel="htmltooltip"></a></li>
+                        <li><a class = "active"  href="#" rel="htmltooltip"></a></li>
+                        <li><a class = "inactive" href="#"></a></li>
+                        <li><a class = "inactive" href="#"></a></li>    
+                        <li><a class = "inactive" href="#"></a></li>
+					</ul>
+				</li>
+				</ul>
+				
+                </li>
+	
+				<!--	<a  class = "active" href="#" rel="htmltooltip"></a>
+					<ul>
+						<li><a class = "inactive" href="#"></a></li>
+                        <li><a  class = "inactive" href="#"></a></li>
+                        <li><a  class = "inactive" href="#"></a></li>
+                        <li><a  class = "inactive"href="#"></a></li>
+                        <li><a class = "inactive" href="#"></a></li>
+					</ul>
+				</li>
+                <li>
+					<a  class = "active"href="#" rel="htmltooltip"></a>
+					<ul>
+						<li><a  class = "active" href="#" rel="htmltooltip"></a></li>
+                        <li><a  class = "inactive" href="#"></a></li>
+                        <li><a class = "inactive" href="#"></a></li>
+                        <li><a class = "inactive" href="#"></a></li>
+                        <li><a  class = "inactive" href="#"></a></li>
+					</ul>
+				</li>
+                <li>
+					<a class = "inactive" href="#"></a>
+					<ul>
+						<li><a  class = "inactive" href="#"></a></li>
+                        <li><a class = "inactive" href="#"></a></li>
+                        <li><a  class = "inactive"href="#"></a></li>
+                        <li><a  class = "inactive"href="#"></a></li>
+                        <li><a  class = "inactive"href="#"></a></li>
+					</ul>
+				</li>
+				<li>
+					<a  class = "inactive" href="#"></a>
+					<ul>
+						<li><a  class = "inactive" href="#"></a></li>
+						<li><a class = "inactive" href="#"></a></li>
+						<li><a  class = "inactive" href="#"></a></li>
+                        <li><a  class = "inactive" href="#"></a></li>
+                        <li><a class = "inactive"  href="#" ></a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>-->
+</div>
+</div>
+
+
+<div class="htmltooltip">Profile</br> Name : Swapnil Lokhande</br> Address : Katraj, Pune </br> Mobile No : 9764187577</div>
+<div class="htmltooltip"><strong>Profile</strong></br> Name : Prmod Kadam </br> Address : Bibwewadi, Pune </br> Mobile No : 976233232 </div>
+<div class="htmltooltip"><strong>Profile</strong></br> Name : Achit Kamble </br> Address : Satara </br> Mobile No : 9764232577 </div>
+<div class="htmltooltip"><strong>Profile</strong></br> Name : Prashant Satwe </br> Address : Nagpur </br> Mobile No : 9762337577 </div>
+<div class="htmltooltip"><strong>Profile</strong></br> Name : Prashant Satwe1 </br> Address : Nagpur </br> Mobile No : 9762337577 </div>
+<div class="htmltooltip"><strong>Profile</strong></br> Name : Prashant Satwe2 </br> Address : Nagpur </br> Mobile No : 9762337577 </div>
+<div class="htmltooltip"><strong>Profile</strong></br> Name : Prashant Satwe3 </br> Address : Nagpur </br> Mobile No : 9762337577 </div>

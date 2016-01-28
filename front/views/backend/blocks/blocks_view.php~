@@ -1,0 +1,81 @@
+	
+<div id="usersetting">
+	<nav class="top_buttons1">
+	<ul>
+		<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">	
+	 <a href="<?= site_url('backend/blocks')?>" title="All blogs" class="the_button1">
+			<div id="iconimg">
+		<img src="<?php echo base_url(); ?>images/new/all.jpg" height="30" width="30"/>	
+		</div></a>
+		</div>
+		</div>
+		</div>
+		<div id="count_pos">
+	<?php echo $count['allcount']; ?>
+		</div>
+		</li>		 
+	 
+				
+			<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">	
+				<?php
+					if($count['acount']==0 && $count['incount']==0)
+					{ ?>
+					 <a href="<?= site_url('backend/blocks/add_blocks')?>" title="Active" class="the_button1">
+				<?php }else
+					{ ?>
+					 <a href="<?= site_url('backend/blocks/select_block/active')?>" title="Inactive" class="the_button1">
+						<?php 
+					}
+					?>
+					<div id="iconimg">
+		<img src="<?php echo base_url(); ?>images/new/active.jpg" height="30" width="30"/>	
+		</div></a>
+		</div>
+		</div>
+		</div>
+		<div id="count_pos">
+	<?php echo $count['acount']; ?>
+		</div>
+		</li>		 
+					
+					
+							<li class="big_button">
+		<div class="out_border1">
+		<div class="button_wrapper1">
+		<div class="in_border1">	
+					 <a href="<?= site_url('backend/blocks/select_block/inactive')?>" title="Inactive" class="the_button1">
+					
+					<div id="iconimg">
+		<img src="<?php echo base_url(); ?>images/new/inactive.jpg" height="30" width="30"/>	
+		</div></a>
+		</div>
+		</div>
+		</div>
+		<div id="count_pos">
+	<?php echo $count['incount']; ?>
+		</div>
+		</li>		 
+				
+					</ul>
+	</nav>
+	</div>
+				
+				<div class="g_12 separator under_stat"><span></span></div>
+	<?php
+	switch($title)
+	{
+		 case 'Blocks': $this->load->view('backend/blocks/blocks_table');
+					 break;
+		default:$this->load->view('backend/blocks/blocks_table');
+	
+	}
+		
+			
+	
+	 ?>

@@ -1,0 +1,51 @@
+<?php 
+echo form_open_multipart('backend/media/do_upload');?>
+<div class="g_12">
+				
+					
+					<div class="widget_contents noPadding">
+						<?php echo validation_errors('<p class="error">');?>
+						<div class="line_grid">
+								<div class="g_3"><span class="label">Language <span class="must">*</span></span></div>
+	<div class="g_9">
+							<select name="language" class="simple_form">
+	<?php
+	    foreach($lang as $val)
+	   {
+	        echo '<option value="'.$val->id.'">'.$val->name.'</option>';
+	   }
+?>
+</select>
+					</div>		
+						<input type="hidden" name="type" value="<?php echo $type; ?>"/>
+						<div class="g_3"><span class="label">Title <span class="must">*</span></span></div>
+								<div class="g_9">
+									<input type="text" name="title" placeholder="Enter Title for <?php echo $type ;?>" class="simple_field" required />
+							</div>
+							<div class="g_3"><span class="label">Select  <?php echo $type ;?><span class="must">*</span></span></div>
+							<div class="g_9">
+								<input type="file" name="userfile" class="simple_form" />
+								<div class="field_notice">Max Size: 1Mb</div>
+							</div>
+							<div class="g_3"><span class="label">Alternate text </span></div>
+								<div class="g_9">
+									<input type="text" name="alttxt" placeholder="Enter Alternate Text for <?php echo $type ;?>" class="simple_field" />
+							</div>
+						
+						<div class="g_3"><span class="label">Caption </span></div>
+								<div class="g_9">
+									<input type="text" name="caption" placeholder="Enter Caption for <?php echo $type ;?>" class="simple_field" />
+							</div>
+						</div>
+							
+						<div class="line_grid">
+							<div class="g_9">
+								<input type="submit" value="Upload .." class="simple_buttons g_91" />
+							</div>
+						</div>
+					</div>
+</div>
+
+
+    <!--RIGHT TEXT/CALENDAR-->
+    

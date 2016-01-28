@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------------------------------------------------------------- */
+/* Theme Information
+/* ----------------------------------------------------------------------
+Name: Finesse
+Description: Responsive Business Theme
+Version: 2.2.2
+Author: Ixtendo
+Author URI: http://www.ixtendo.com
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Finesse Shortcode Styles
+/* ----------------------------------------------------------------------
+TABLE OF CONTENTS
+
+-Lists
+-Buttons
+-Blockquotes
+-Notification Boxes
+-Tabs
+-Toggle & Accordion
+-Dropcaps
+-Highlights
+-Preformatted Text & Computer Code
+-Infobox
+-Images
+-White Space
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Toggle & Accordion
+/* ---------------------------------------------------------------------- */
+.toggle, .accordion {
+	margin-bottom: 20px;	
+}
+
+span.toggle-title, span.accordion-title {
+	display: block;
+	position: relative; /* sets the initial position for the icon */
+	padding: 10px 10px 10px 40px;
+	cursor: pointer;
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;
+}
+
+span.accordion-title {
+	border-top: none;	
+}
+
+.accordion > div:first-child > span.accordion-title {
+	border-top: 1px solid #e5e5e5;	
+}
+
+.toggle-inner, .accordion-inner {
+    padding: 15px 10px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+}
+
+.toggle .ui-icon, .accordion .ui-icon {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url(../images/toggle-plus.png);
+	width: 20px;
+	height: 20px;
+}
+
+.toggle .ui-state-active .ui-icon, .accordion .ui-state-active .ui-icon {
+	background-image: url(../images/toggle-minus.png);
+}
+

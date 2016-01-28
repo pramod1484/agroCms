@@ -1,0 +1,145 @@
+html{
+    overflow: auto;
+}
+
+body{
+	background-color: #bbb;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+	a:hover{
+		color: #fff;
+	}
+
+div.content{
+	text-align: center;
+	color: #fff;
+	padding-top: 100px;
+}
+
+#create-confirmation{
+	display: none;
+}
+
+div.content h1{
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 3.5rem;
+	padding-bottom: 25px;
+    color: #777;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+div.content p{
+	font-family: "Roboto", sans-serif;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+fieldset{
+	max-width: 400px;
+	text-align: center;
+	border-bottom: none;
+	margin: 0 auto;
+}
+
+div.form-group{
+	margin: 25px 0 !important;
+}
+
+span.actions{
+	display: block;
+	text-align: right;
+}
+
+label{
+	display: none;
+}
+
+span.actions{
+    display: inline-block;
+    width: 410px;
+}
+
+
+small{
+	text-transform: uppercase;
+	margin-top: 50px;
+	padding-bottom: 50px;
+    color: #777;
+    display: block;
+    text-align: center;
+}
+
+small a{
+    color: #777;
+}
+
+p.demo b{
+	display: inline-block;
+	color: #fff;
+}
+
+p.footer{
+	margin: 100px auto;
+	text-align: center;
+}
+
+body p.site-name{
+	margin-top: 10px;
+	font-size: 1em;
+	color: #777;
+	text-transform: uppercase;
+}
+
+	body p.site-name span{
+		font-weight: bold;
+		display: inline-block;
+		padding: 4px 8px;
+		margin: -4px 0 0 2px;
+		background-color: #ddd;
+	}
+
+/* test styles */
+table.test{
+    width: 500px;
+    margin: 25px auto 50px auto;
+    text-align: left;
+}
+
+    table.test tr{
+        border-bottom: 1px solid #ddd;
+    }
+    
+    table.test tr:last-child{
+        border-bottom: none;
+    }
+    
+    table.test td{
+        padding: 15px;
+    }
+
+    table.test td.test{
+        width: 80%;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    table.test td.result{
+        width: 20%;
+        text-align: right;
+    }
+
+    table.test i{
+        font-size: 30px;
+    }
+
+

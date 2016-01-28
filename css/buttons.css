@@ -1,0 +1,160 @@
+/* 1. Black Button */
+a.button-blue span {
+	background: #10323e;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-moz-transition:all 200ms ease-in;
+	
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:inherit;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-blue span:hover {
+	background: #050505;
+}
+
+/* 2. Red Button */
+a.button-red span {
+	background: #7b0b0a;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-moz-transition:all 200ms ease-in;
+	
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:inherit;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-red span:hover {
+	background: #050505;
+}
+
+/* 3. Green Button */
+a.button-green span {
+	background: #1f5811;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-moz-transition:all 200ms ease-in;
+	
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:inherit;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-green span:hover {
+	background: #050505;
+}
+
+/* 4. Brown Button */
+a.button-brown span {
+	background: #452411;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-moz-transition:all 200ms ease-in;
+	
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:inherit;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-brown span:hover {
+	background: #050505;
+}
+
+/* 5. Black Button */
+a.button-black span {
+	background: #34342c;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-moz-transition:all 200ms ease-in;
+	
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:inherit;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-black span:hover {
+	background: #050505;
+}
+
+/* 6. Orange Button */
+a.button-orange span {
+	background: #c43a0c;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-moz-transition:all 200ms ease-in;
+	
+	text-decoration:none;
+	color: #fff;
+	display:inline-block;
+	font-family:inherit;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+}
+a.button-orange span:hover {
+	background: #050505;
+}
+
+/* Button Sizes */
+.small span {
+	padding:1px 10px !important;
+	font-size:11px !important;
+	font-weight:normal !important;
+}
+.medium span {
+	padding:5px 20px !important;
+	font-size:13px !important;
+	font-weight:normal !important;
+}
+.big span {
+	padding:10px 30px !important;
+	font-size:15px !important;
+	font-weight:normal !important;
+}

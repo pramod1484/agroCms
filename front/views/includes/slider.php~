@@ -1,0 +1,59 @@
+
+
+<!-- START slider -->
+  <div class="flexslider_wrapper">
+    <div class="wrap">
+    <div class="flexslider">
+      <ul class="slides">
+
+        <li><img src="<?php echo site_url();?>images/slider/slide1.jpg" alt="" />
+          <!--<div class="slide-text">
+            <p>Venenatis imperdiet magna vel nisl imperdiet aliquam eget euismod nisl cursus.</p>
+          </div>-->
+        </li>
+        <li>
+          <object id="player_1" src="http://player.vimeo.com/video/39683393?api=1&amp;player_id=player_1" width="500" height="181" frameborder="0"></object>
+        </li>
+        <li><img src="<?php echo site_url();?>images/slider/slide2.jpg" alt="" />
+          <!--<div class="slide-text">
+            <p>Lectus consectetur scelerisque sodales, dui nibh rhoncus nisi, ut malesuada odio nisi sed purus.</p>
+          </div>-->
+        </li>
+        <li><img src="<?php echo site_url();?>images/slider/slide3.png" alt="" />
+          <!--<div class="slide-text">
+            <p>Cullamcorper in nunc. Suspendisse imperdiet odio id odio sollicitudin lobortis.</p>
+          </div>-->
+        </li>
+
+      </ul>
+    </div>
+    <div class="flexslider_shadow"></div>
+    </div>
+  </div>
+  
+
+  <div id="breadcrumbs">
+    <div class="wrap">
+    
+      <center><h1 style="margin-top:60px;">
+
+      <?php
+      if($get1)
+      {
+        foreach($get1 as $r)
+        {
+          echo str_replace('_', ' ', $r->title);
+        }
+      }
+      ?>
+
+
+      </h1></center>
+      
+    </div>
+  </div>
+  
+  <!-- START content -->
+  <div id="content_wp">
+    <div class="wrap">
+

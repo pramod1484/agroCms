@@ -1,0 +1,17 @@
+  <div id="usersetting">
+
+	
+	</div>
+				
+	<div class="g_12 separator under_stat"><span></span></div>
+	<?php
+	switch($title)
+	{
+		 case 'Content': $this->load->view('backend/pages/cont_table');
+					 break;
+		default:$this->load->view('backend/pages/cont_table');
+	}
+		
+			
+	
+	 ?>

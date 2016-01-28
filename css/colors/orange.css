@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------------------------------------------------------------- */
+/* Theme Information
+/* ----------------------------------------------------------------------
+Name: Finesse
+Description: Responsive Business Theme
+Version: 2.2.2
+Author: Ixtendo
+Author URI: http://www.ixtendo.com
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Finesse Red Styles
+/* ----------------------------------------------------------------------
+TABLE OF CONTENTS
+
+-Text
+-Background Colors
+-Sprites
+-Borders
+-Media Player
+------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Text
+/* ---------------------------------------------------------------------- */
+
+
+
+.tabs ul.nav li a:hover, .tabs ul.nav li.ui-state-active a,
+span.toggle-title:hover, span.accordion-title:hover, span.toggle-title.ui-state-active, span.accordion-title.ui-state-active,
+.pricing-table .featured span.price span,
+ol.comment-list .comment-author a:hover,
+.flex-caption a:hover,
+.entry-title a:hover,
+.iconbox h4 a:hover {
+	color: #f25824;
+}

@@ -1,0 +1,210 @@
+.p2{
+	  font:Verdana;
+	  font-size:16px;
+	  color:#14b4ee;
+	  padding-left:40px;}
+
+#light{
+       position: absolute;
+       padding-left: 20px;
+       
+       width:350px;
+       margin-right: 120px ; 
+       margin-top: 375px;
+       margin-left: 75px
+       }
+
+#lsubmit:hover
+{
+     font-family:Arial;
+	font-size: 14px;
+	background: #add6ff;
+	color:#003972;
+	border: 1px solid #839221;
+	border-radius: 8px;
+	font-weight: bold;}
+	
+#lsubmit{
+margin-top: 5px;
+width: 75px;
+height: 25px;
+font-family:Arial;
+font-size: 14px;
+font-weight: bold;
+color: #003972;
+text-shadow: 0 1px #e3f1f1;
+background: #cecece;
+border: 1px solid;
+border-color: #b4ccce #b3c0c8 #9eb9c2;
+border-radius: 8px;
+outline: 0;
+@include box-sizing(content-box); // Firefox sets this to border-box by default
+@include linear-gradient(top, #edf5f8, #cde5ef);
+@include box-shadow(inset 0 1px white, 0 1px 2px rgba(black, .15));
+}
+  &:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    @include box-shadow(inset 0 0 3px rgba(black, .2));
+  }
+
+        	#light table
+        {
+        	position: relative;
+         width:100%;
+         padding-top: 25px;
+         padding: 20px 25px;        	
+        	}
+        		#light table tr
+        {
+        	position: relative;
+         width:100%;
+         line-height: 35px;
+         
+         
+                          	
+        	}
+
+        	#light table td
+        {
+        
+        font-size: 18px;
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-weight: bold;
+        color:#003366;
+                 	
+        	}
+        	
+        	
+#fade{
+
+width:100%;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0px 1px 3px rgba(24, 24, 27, 1);
+-moz-box-shadow:    0px 1px 3px rgba(24, 24, 27, 1);
+box-shadow:         0px 1px 3px rgba(24, 24, 27, 1);
+margin-bottom:00px;
+}
+
+#close{
+position: relative;        		
+margin-right: -15px;        		
+margin-top: -15px;        		
+float: right;        		
+}
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 200%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 55%;
+            padding: 16px;
+            border: 16px solid #add6ff;
+            background-color: #efefef;
+            z-index:1002;
+            overflow: auto;
+        }
+        
+     a #hints {
+	position:relative;
+	border:1px;
+	padding:1px;
+	background-color:#eeeedd; /* 468 */
+	font-family: Verdana;
+	color: #000;
+ }
+a #hints:hover {
+	text-decoration:none;
+}
+a #hints span {
+	display: none;
+}
+a #hints:hover span {
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -150px;
+	width: 125px;
+	padding: 5px;
+	margin: 10px;
+	z-index: 100;
+	color: #000;
+	background: #fff9d7;
+	border: 1px solid #e2c822;
+	font: 10px Verdana, sans-serif;
+	text-align: center;
+	text-decoration:none;
+}
+
+.msgalert {
+	background-color: #fff7d7 !important;
+	border: 1px solid #fad163 !important;
+	margin-left:10px;
+	margin-top:8px;
+	margin-bottom: 8px;
+	padding: 5px;
+	font:11px arial;
+	float:left;
+	text-align:center;
+	width:91%;
+	font-weight:bold;
+}
+
+#NewCalc .calc_t {
+	height:26px;
+	width: 217px;
+	background:#64A3DB;
+
+}
+#NewCalc .calc_t_l {
+	margin-top: 5px;
+	
+}
+#NewCalc .calc_t_r {
+	height:26px;
+
+	background: #64A3DB no-repeat right top;
+}
+#NewCalc .calc_t h1 {
+	font-size:12px;
+	color:#FFFFFF;
+	padding-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-family:arial;
+}
+#NewCalc .calc_m {
+	font-size:11px;
+	min-height:200px;
+	min-width:200px;
+	background:#ffffff;
+	border:#64A3DB solid 2px;
+	padding: 5px 5px 0px 8px;
+	border-top:none;
+
+}
+
+#NewCalcINPUT {
+	BORDER: #B7D9ED 1px groove;
+BACKGR OUND: #FAFDFF;
+	WIDTH: 90%;
+	COLOR: #111;
+	HEIGHT: 14px;
+	TEXT-ALIGN: right;
+	font-size:11px;
+}
