@@ -53,7 +53,7 @@
 		}
 		public function save($data,$id=NULL)
 		{
-			//timestamp
+				//timestamp
 			if ($this->_timestamp==TRUE) {
 				$now=date('Y-m-d H:i:s');
 				$id||$data['created']=$now;

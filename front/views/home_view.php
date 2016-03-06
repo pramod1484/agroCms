@@ -1,8 +1,8 @@
-<div class="main "  data-scroll-index='0'>
+<div class="main min_hgt"  data-scroll-index='0'>
     <div class="bnr_cnt">
         <div class="mid_cnt">
-            <a class="logo" href="index.html"><img src="images/agro_logo.png" width="319" height="196"></a>
-            <span class="bnr_txt">There's no domination like intergalactic domination intergalactic domination</span>
+            <a class="logo" href="#"><img src="images/agro_logo.png" width="319" height="196"></a>
+            <span class="bnr_txt">Agricultural Hub for Everyone</span>
             <div class="read_btn">
                 <a class="read_1" href="#">Read More</a>
             </div>

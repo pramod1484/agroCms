@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -18,8 +18,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -34,9 +33,9 @@ if (defined('ENVIRONMENT'))
 	switch (ENVIRONMENT)
 	{
 		case 'development':
-			error_reporting(E_ALL|E_STRICT);
+			error_reporting(E_ALL);
 		break;
-	
+
 		case 'testing':
 		case 'production':
 			error_reporting(0);

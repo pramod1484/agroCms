@@ -1,64 +1,1 @@
-<!-- CONTENT START -->
-
-	<form method="post" name="addpage" action="save_page">
-<div class="g_12">
-				
-					<div class="widget_contents noPadding">
-					<p>
-					<?php echo  validation_errors('<p class="error">'); ?></p>
-
-<div class="line_grid">
-
-
-
-								<div class="g_3"><span class="label">Title <span class="must">*</span></span></div>
-								<div class="g_9">
-									<input type="text" name="title" placeholder="Enter Title for Page" class="simple_field" required />
-								</div>
-								<div>
-			  <input name="date" type="hidden" id="date" class="largeInput" value="<?php echo date("Y/m/d")?>"/>
-		</div>
-		<div class="g_3">
-			<span class="label" >Content <span class="must">*</span>
-		</div>		
-			
-							<div class="g_12">
-								<textarea name="content" class="simple_field wysiwyg"></textarea>
-								<div class="field_notice">What You See Is What You Get ;)</div>
-							</div>
-				
-							<div class="g_3"><span class="label">Meta Title <span class="must">*</span></span></div>
-							<div class="g_9">
-								<input type="text" name="meta_title" placeholder="Enter Mete Title for Page" class="simple_field"  required/>
-							</div>
-							
-							<div class="g_3"><span class="label">Meta Keyword <span ></span></span></div>
-							<div class="g_9">
-								<input type="text" name="meta_keyword" placeholder="Enter Keyword for Page" class="simple_field" />
-							</div>
-								
-							<div class="g_3"><span class="label">Meta Discription </span></div>
-							<div class="g_9">
-								<input type="text" name="meta_discription" placeholder="Enter Discription for Page" class="simple_field" />
-							</div>	
-							<div class="g_3"><span class="label">Parmalink </span></div>
-							<div class="g_9">
-								<input type="text" name	="permalink" placeholder="Enter Parmalink for Page" class="simple_field"  />
-							</div>					
-												
-			
-	
-		
-		    </div>
-		
-	</div>
-	<p class="g_3">
-			<input type="submit" value="Save" class="simple_buttons"/>
-			</p>
-	</div>
-</form>
-
-
-
-
-
+<!-- CONTENT START --><!--<form method="post" name="addpage" action="save_page">--><?php echo form_open_multipart('backend/content/save_page') ?>	<div class="g_12">		<div class="widget_contents noPadding">			<p>	<?php echo  validation_errors('<p class="error">'); ?></p>			<div class="line_grid">				<div class="g_3"><span class="label">Title <span class="must">*</span></span></div>				<div class="g_9">					<input type="text" name="title" placeholder="Enter Title for Page" class="simple_field" required />				</div>				<div>					<input name="date" type="hidden" id="date" class="largeInput" value="<?php echo date("Y/m/d")?>"/>				</div>				<div class="g_3">			<span class="label" >Content <span class="must">*</span>				</div>				<div class="g_12">					<textarea name="content" class="simple_field wysiwyg"></textarea>					<div class="field_notice">What You See Is What You Get ;)</div>				</div>				<div class="g_3"><span class="label">Background Image<span class="must">*</span></span></div>				<div class="g_9">					<input type="file" name="bg_image" class="simple_form" />					<div class="field_notice">Max Size: 1Mb</div>				</div>				<div class="g_3"><span class="label">Meta Title <span class="must">*</span></span></div>				<div class="g_9">					<input type="text" name="meta_title" placeholder="Enter Mete Title for Page" class="simple_field"  required/>				</div>				<div class="g_3"><span class="label">Meta Keyword <span ></span></span></div>				<div class="g_9">					<input type="text" name="meta_keyword" placeholder="Enter Keyword for Page" class="simple_field" />				</div>				<div class="g_3"><span class="label">Meta Discription </span></div>				<div class="g_9">					<input type="text" name="meta_discription" placeholder="Enter Discription for Page" class="simple_field" />				</div>				<div class="g_3"><span class="label">Parmalink </span></div>				<div class="g_9">					<input type="text" name	="permalink" placeholder="Enter Parmalink for Page" class="simple_field"  />				</div>			</div>		</div>		<p class="g_3">			<input type="submit" value="Save" class="simple_buttons"/>		</p>	</div></form><script type="text/javascript" src="<?php echo base_url();?>js/tiny_mce/tiny_mce.js"></script><script type="text/javascript">	tinyMCE.init({		// General options		mode : "textareas",		theme : "advanced",		plugins : "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,wordcount,advlist,autosave,visualblocks",		// Theme options		theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",		theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",		theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",		theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak,restoredraft,visualblocks",		theme_advanced_toolbar_location : "top",		theme_advanced_toolbar_align : "left",		theme_advanced_statusbar_location : "bottom",		theme_advanced_resizing : true,	});</script>

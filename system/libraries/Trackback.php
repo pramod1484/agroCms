@@ -5,8 +5,9 @@
  * An open source application development framework for PHP 5.1.6 or newer
  *
  * @package		CodeIgniter
- * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @author		EllisLab Dev Team
+ * @copyright		Copyright (c) 2008 - 2014, EllisLab, Inc.
+ * @copyright		Copyright (c) 2014 - 2015, British Columbia Institute of Technology (http://bcit.ca/)
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -23,14 +24,14 @@
  * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Trackbacks
- * @author		ExpressionEngine Dev Team
+ * @author		EllisLab Dev Team
  * @link		http://codeigniter.com/user_guide/libraries/trackback.html
  */
 class CI_Trackback {
 
 	var $time_format	= 'local';
 	var $charset		= 'UTF-8';
-	var $data			= array('url' => '', 'title' => '', 'excerpt' => '', 'blocks_name' => '', 'charset' => '');
+	var $data			= array('url' => '', 'title' => '', 'excerpt' => '', 'blog_name' => '', 'charset' => '');
 	var $convert_ascii	= TRUE;
 	var $response		= '';
 	var $error_msg		= array();
@@ -63,7 +64,7 @@ class CI_Trackback {
 		}
 
 		// Pre-process the Trackback Data
-		foreach (array('url', 'title', 'excerpt', 'blocks_name', 'ping_url') as $item)
+		foreach (array('url', 'title', 'excerpt', 'blog_name', 'ping_url') as $item)
 		{
 			if ( ! isset($tb_data[$item]))
 			{
@@ -94,7 +95,7 @@ class CI_Trackback {
 				{
 					$$item = $this->convert_ascii($$item);
 				}
-				elseif ($item == 'blocks_name')
+				elseif ($item == 'blog_name')
 				{
 					$$item = $this->convert_ascii($$item);
 				}
@@ -104,7 +105,7 @@ class CI_Trackback {
 		// Build the Trackback data string
 		$charset = ( ! isset($tb_data['charset'])) ? $this->charset : $tb_data['charset'];
 
-		$data = "url=".rawurlencode($url)."&title=".rawurlencode($title)."&blocks_name=".rawurlencode($blocks_name)."&excerpt=".rawurlencode($excerpt)."&charset=".rawurlencode($charset);
+		$data = "url=".rawurlencode($url)."&title=".rawurlencode($title)."&blog_name=".rawurlencode($blog_name)."&excerpt=".rawurlencode($excerpt)."&charset=".rawurlencode($charset);
 
 		// Send Trackback(s)
 		$return = TRUE;
@@ -137,7 +138,7 @@ class CI_Trackback {
 	 */
 	function receive()
 	{
-		foreach (array('url', 'title', 'blocks_name', 'excerpt') as $val)
+		foreach (array('url', 'title', 'blog_name', 'excerpt') as $val)
 		{
 			if ( ! isset($_POST[$val]) OR $_POST[$val] == '')
 			{

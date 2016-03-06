@@ -1,32 +1,9 @@
-
-
 <?php
-			if($title1!='Property_Lists' && $title1!='Post_Requirement' && $title1!='Home' && $title1!='Loan_Advice' )
-			{
-			
-				
-			
-	echo '<div id="content"><!--Start Content-->';
+if ($get1) {
+    echo $get1;
 
+} else {
+    echo 'Page is not published';
 }
 ?>
-				
-			
-
-			<?php
-			if($get1)
-			{
-			foreach($get1 as $r)
-			{
-				
-				echo $r->content;
-				
-			}
-		
-			}
-			else
-			{
-				echo 'Page is not published';
-			}
-			?>		
 	

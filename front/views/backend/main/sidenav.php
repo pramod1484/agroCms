@@ -6,7 +6,6 @@
 			
 			<li><a title="Pages" class="<?php  echo  $actpa; ?>" href="<?php echo site_url('backend/content'); ?>"></a></li>
 			<li><a title="Blocks" class="<?php  echo  $actbl; ?>" href="<?php echo site_url('backend/blocks'); ?>"></a></li>
-			<li><a title="Property Media" class="<?php  echo  $actme; ?>" href="<?php echo site_url('backend/media'); ?>"></a></li>
 			<li><a title="Menus" class="<?php  echo  $actmenu; ?>" href="<?php echo site_url('backend/menu'); ?>"></a></li>
 			<li><a title="Settings" class="<?php  echo  $actset; ?>" href="<?php echo site_url('backend/setting'); ?>"></a></li>
 			
@@ -31,12 +30,6 @@
 					<a href="<?php echo site_url('backend/blocks'); ?>" title="Blocks">
 						<span class="tab_label">Blocks</span>
 						<span class="tab_info">Blocks</span>
-					</a>
-				</li>
-				<li class="<?php echo  $actme; ?>">
-					<a href="<?php echo site_url('backend/media'); ?>" title="Media Library">
-						<span class="tab_label">Property</span>
-						<span class="tab_info">Property Media</span>
 					</a>
 				</li>
 				<li class="<?php echo  $actmenu; ?>">
